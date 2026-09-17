@@ -1,0 +1,31 @@
+[project]
+name = "khmer-ocr-tools"
+version = "0.1.0"
+description = "Comprehensive AI OCR Training & Tooling Suite for the Khmer Language"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "PyQt5>=5.15.6",
+    "Pillow>=9.0.0",
+    "numpy>=1.22.0",
+    "opencv-python-headless>=4.5.0",
+    "matplotlib>=3.5.0",
+    "albumentations>=1.3.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.64.0",
+    "editdistance>=0.6.0",
+    "onnx>=1.14.0",
+    "onnxruntime>=1.15.0,<=1.23.2",
+    "pytest>=7.0.0",
+    "qtawesome>=1.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["khmer_ocr*"]

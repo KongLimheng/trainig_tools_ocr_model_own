@@ -1,0 +1,7 @@
+data/*
+checkpoints/wiki_finetuned
+checkpoints/bk
+exports/*
+.pytest_cache
+.venv
+__pycache__
