@@ -29,3 +29,16 @@ def test_renderer_with_subscripts():
 
     assert img is not None
     assert img.size[1] == 48
+
+
+def test_is_khmer_font_validation():
+    from pathlib import Path
+    from khmer_ocr.synth.fonts import is_khmer_font
+
+    mgr = KhmerFontManager()
+    font_names = mgr.get_font_names()
+    assert len(font_names) > 0
+
+    first_path = mgr.get_font_path(font_names[0])
+    assert first_path is not None
+    assert is_khmer_font(first_path) is True

@@ -7,7 +7,7 @@ from typing import Callable, Optional
 from concurrent.futures import ThreadPoolExecutor
 from .fonts import KhmerFontManager
 from .renderer import KhmerTextRenderer
-from .corpus_sampler import KhmerCorpusSampler
+from .corpus_sampler import KhmerCorpusSampler, validate_khmer_line
 
 
 class KhmerDatasetGenerator:
@@ -18,9 +18,10 @@ class KhmerDatasetGenerator:
         font_manager: KhmerFontManager | None = None,
         corpus_sampler: KhmerCorpusSampler | None = None,
         target_height: int = 48,
+        pure_corpus: bool = False,
     ):
         self.font_mgr = font_manager or KhmerFontManager()
-        self.sampler = corpus_sampler or KhmerCorpusSampler()
+        self.sampler = corpus_sampler or KhmerCorpusSampler(pure_corpus=pure_corpus)
         self.renderer = KhmerTextRenderer(font_manager=self.font_mgr)
         self.target_height = target_height
         self._stop_requested = False
@@ -38,6 +39,7 @@ class KhmerDatasetGenerator:
         bg_style: str = "random",
         val_ratio: float = 0.0,
         clean_ratio: float = 0.40,
+        pure_corpus: bool | None = None,
         progress_callback: Optional[Callable[[int, int, str], None]] = None,
     ) -> Path:
         """Generates a dataset of synthetic Khmer line images and ground truth labels.
@@ -84,7 +86,12 @@ class KhmerDatasetGenerator:
             if self._stop_requested:
                 break
 
-            text = self.sampler.sample_line()
+            text = self.sampler.sample_line(pure_corpus=pure_corpus)
+            if not validate_khmer_line(text):
+                for _ in range(5):
+                    text = self.sampler.sample_line(pure_corpus=pure_corpus)
+                    if validate_khmer_line(text):
+                        break
             font_name = random.choice(available_fonts)
             font_size = random.randint(28, 44)
 
@@ -98,7 +105,8 @@ class KhmerDatasetGenerator:
 
             # Determine train vs validation assignment
             is_val_sample = is_split and (random.random() < val_ratio)
-            target_img_dir = val_img_dir if is_val_sample else (train_img_dir if is_split else images_dir)
+            target_img_dir = val_img_dir if is_val_sample else (
+                train_img_dir if is_split else images_dir)
 
             try:
                 img, label = self.renderer.render_line(
@@ -124,7 +132,8 @@ class KhmerDatasetGenerator:
                 continue
 
             if progress_callback and (idx % 20 == 0 or idx == num_samples - 1):
-                progress_callback(idx + 1, num_samples, f"Generated {idx + 1}/{num_samples} images...")
+                progress_callback(idx + 1, num_samples,
+                                  f"Generated {idx + 1}/{num_samples} images...")
 
         if is_split:
             with open(train_labels_file, "w", encoding="utf-8") as f:
@@ -140,6 +149,7 @@ class KhmerDatasetGenerator:
             summary_msg = f"Finished! {len(train_records)} samples saved to {output_path}"
 
         if progress_callback:
-            progress_callback(len(train_records) + len(val_records), num_samples, summary_msg)
+            progress_callback(len(train_records) +
+                              len(val_records), num_samples, summary_msg)
 
         return primary_labels

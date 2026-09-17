@@ -1,0 +1,2518 @@
+{
+  "total_fonts": 418,
+  "styles_breakdown": {
+    "Standard Print (Khatt / ខាត់)": 381,
+    "Ornate / Title (Moul / មូល)": 14,
+    "Slanted / Cursive (Chrieng / ជ្រៀង)": 23
+  },
+  "fonts": [
+    {
+      "name": "Suwannaphum-Light",
+      "filename": "Suwannaphum-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 97536
+    },
+    {
+      "name": "ASvadek_FastHand",
+      "filename": "ASvadek_FastHand.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 600912
+    },
+    {
+      "name": "Preahvihear-Regular",
+      "filename": "Preahvihear-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 90328
+    },
+    {
+      "name": "KhmerOScontent",
+      "filename": "KhmerOScontent.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 200088
+    },
+    {
+      "name": "Tlok",
+      "filename": "Tlok.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 355068
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-ExtraLight",
+      "filename": "NotoSansKhmer_ExtraCondensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106552
+    },
+    {
+      "name": "KhmerOSMoul",
+      "filename": "KhmerOSMoul.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 366860
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Thin",
+      "filename": "NotoSansKhmer_ExtraCondensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106556
+    },
+    {
+      "name": "KhmerKCSvayUni",
+      "filename": "KhmerKCSvayUni.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 264048
+    },
+    {
+      "name": "Nokora-Thin",
+      "filename": "Nokora-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 33228
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-SemiBold",
+      "filename": "NotoSerifKhmer_SemiCondensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141828
+    },
+    {
+      "name": "BaidukOT",
+      "filename": "BaidukOT.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 231312
+    },
+    {
+      "name": "Hanumanb",
+      "filename": "Hanumanb.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 121948
+    },
+    {
+      "name": "Kh__Writhand_(1)",
+      "filename": "Kh__Writhand_(1).ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 302212
+    },
+    {
+      "name": "AKbalthom_KhmerHand",
+      "filename": "AKbalthom_KhmerHand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 514384
+    },
+    {
+      "name": "Nokora-ExtraBold",
+      "filename": "Nokora-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 33152
+    },
+    {
+      "name": "Hanuman-ExtraBold",
+      "filename": "Hanuman-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59396
+    },
+    {
+      "name": "Nokora-Bold",
+      "filename": "Nokora-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 42344
+    },
+    {
+      "name": "Khmer_Savuth_Pen",
+      "filename": "Khmer_Savuth_Pen.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 354960
+    },
+    {
+      "name": "Mo8V56i",
+      "filename": "Mo8V56i.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 446368
+    },
+    {
+      "name": "kMons99V1E2s",
+      "filename": "kMons99V1E2s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 338004
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Regular",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141712
+    },
+    {
+      "name": "Dangrek",
+      "filename": "Dangrek.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 269620
+    },
+    {
+      "name": "khmer_Savuth_Brush",
+      "filename": "khmer_Savuth_Brush.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 933732
+    },
+    {
+      "name": "ASvadek_Box",
+      "filename": "ASvadek_Box.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 327600
+    },
+    {
+      "name": "NotoSerifKhmer-Thin",
+      "filename": "NotoSerifKhmer-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141744
+    },
+    {
+      "name": "Bayon-Regular",
+      "filename": "Bayon-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 54600
+    },
+    {
+      "name": "Khmer_CN_Poipet",
+      "filename": "Khmer_CN_Poipet.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 225668
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Thin",
+      "filename": "NotoSerifKhmer_SemiCondensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 142036
+    },
+    {
+      "name": "KhmerOSDangrek",
+      "filename": "KhmerOSDangrek.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 231120
+    },
+    {
+      "name": "Khmer_chamnanit",
+      "filename": "Khmer_chamnanit.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 255964
+    },
+    {
+      "name": "KhUniF1",
+      "filename": "KhUniF1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 150312
+    },
+    {
+      "name": "NiDAChenla",
+      "filename": "NiDAChenla.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 171488
+    },
+    {
+      "name": "KhmerOSbokor",
+      "filename": "KhmerOSbokor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 214488
+    },
+    {
+      "name": "KantumruyPro-Bold",
+      "filename": "KantumruyPro-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93268
+    },
+    {
+      "name": "Kh_SN_Kampongsom",
+      "filename": "Kh_SN_Kampongsom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 363944
+    },
+    {
+      "name": "AKbalthom_HighSchool-Fun",
+      "filename": "AKbalthom_HighSchool-Fun.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 225136
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Light",
+      "filename": "NotoSansKhmer_ExtraCondensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106508
+    },
+    {
+      "name": "Siemreap",
+      "filename": "Siemreap.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 285320
+    },
+    {
+      "name": "Sankor",
+      "filename": "Sankor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 255024
+    },
+    {
+      "name": "Bokor-Regular",
+      "filename": "Bokor-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 122964
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Medium",
+      "filename": "NotoSansKhmer_SemiCondensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106352
+    },
+    {
+      "name": "Freehand-Regular",
+      "filename": "Freehand-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 234188
+    },
+    {
+      "name": "Hanuman",
+      "filename": "Hanuman.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 128376
+    },
+    {
+      "name": "kMons80V1E2s",
+      "filename": "kMons80V1E2s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 353080
+    },
+    {
+      "name": "Battambang-Thin",
+      "filename": "Battambang-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 98172
+    },
+    {
+      "name": "KantumruyPro-SemiBoldItalic",
+      "filename": "KantumruyPro-SemiBoldItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102372
+    },
+    {
+      "name": "iKampuchea001_O'Chrov",
+      "filename": "iKampuchea001_O'Chrov.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 151480
+    },
+    {
+      "name": "OdorMeanChey",
+      "filename": "OdorMeanChey.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 310824
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Regular",
+      "filename": "NotoSansKhmer_Condensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106252
+    },
+    {
+      "name": "KHMERMEF1",
+      "filename": "KHMERMEF1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 237784
+    },
+    {
+      "name": "Khmer_Savuth_Pen2",
+      "filename": "Khmer_Savuth_Pen2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 410768
+    },
+    {
+      "name": "Mo5V56hi",
+      "filename": "Mo5V56hi.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537532
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-SemiBold",
+      "filename": "NotoSansKhmer_ExtraCondensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106316
+    },
+    {
+      "name": "ASvadek_Lazy",
+      "filename": "ASvadek_Lazy.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 465848
+    },
+    {
+      "name": "KH_MPS_Jrung",
+      "filename": "KH_MPS_Jrung.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 210524
+    },
+    {
+      "name": "ASvadek_Pixel",
+      "filename": "ASvadek_Pixel.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 801196
+    },
+    {
+      "name": "Koulen",
+      "filename": "Koulen.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 246028
+    },
+    {
+      "name": "KantumruyPro-Medium",
+      "filename": "KantumruyPro-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93484
+    },
+    {
+      "name": "khmer_M2.volt",
+      "filename": "khmer_M2.volt.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 230412
+    },
+    {
+      "name": "Khmer_Pen_Eng",
+      "filename": "Khmer_Pen_Eng.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 97388
+    },
+    {
+      "name": "khmer_s4.volt",
+      "filename": "khmer_s4.volt.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 234572
+    },
+    {
+      "name": "Kh-Muol",
+      "filename": "Kh-Muol.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 234592
+    },
+    {
+      "name": "Kh-Muol-Pali",
+      "filename": "Kh-Muol-Pali.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 180940
+    },
+    {
+      "name": "aphireak1",
+      "filename": "aphireak1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 263256
+    },
+    {
+      "name": "KHMERKEP",
+      "filename": "KHMERKEP.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 266872
+    },
+    {
+      "name": "Kh-MithSalaPali-v2",
+      "filename": "Kh-MithSalaPali-v2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 177400
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Black",
+      "filename": "NotoSansKhmer_Condensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106456
+    },
+    {
+      "name": "ASvadek_Hollow",
+      "filename": "ASvadek_Hollow.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 285812
+    },
+    {
+      "name": "ASvadek_Hindi",
+      "filename": "ASvadek_Hindi.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 262372
+    },
+    {
+      "name": "ChantreaSRui_Low",
+      "filename": "ChantreaSRui_Low.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 129840
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Bold",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141724
+    },
+    {
+      "name": "Khmer_Sharp",
+      "filename": "Khmer_Sharp.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 105024
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Regular",
+      "filename": "NotoSerifKhmer_SemiCondensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141668
+    },
+    {
+      "name": "Daunsok",
+      "filename": "Daunsok.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 211272
+    },
+    {
+      "name": "KhmerNagari",
+      "filename": "KhmerNagari.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 167844
+    },
+    {
+      "name": "kmSBBICsys",
+      "filename": "kmSBBICsys.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 329448
+    },
+    {
+      "name": "Kantumruy-Light",
+      "filename": "Kantumruy-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 46588
+    },
+    {
+      "name": "NotoSerifKhmer-Light",
+      "filename": "NotoSerifKhmer-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141988
+    },
+    {
+      "name": "Mo5V56di",
+      "filename": "Mo5V56di.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537624
+    },
+    {
+      "name": "ASvadek_Bokornew",
+      "filename": "ASvadek_Bokornew.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 390664
+    },
+    {
+      "name": "Khmer_CN_Stueng_Songke",
+      "filename": "Khmer_CN_Stueng_Songke.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 567876
+    },
+    {
+      "name": "KantumruyPro-BoldItalic",
+      "filename": "KantumruyPro-BoldItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102084
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Medium",
+      "filename": "NotoSerifKhmer_SemiCondensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141804
+    },
+    {
+      "name": "Kh_BL_LazySmooth",
+      "filename": "Kh_BL_LazySmooth.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 369860
+    },
+    {
+      "name": "Kh_BL_LazyOutline",
+      "filename": "Kh_BL_LazyOutline.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 947500
+    },
+    {
+      "name": "ASvadek_FreeHand",
+      "filename": "ASvadek_FreeHand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 553928
+    },
+    {
+      "name": "ASvadek_Samurai",
+      "filename": "ASvadek_Samurai.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 239584
+    },
+    {
+      "name": "Khmer_CN_Kam_Rieng",
+      "filename": "Khmer_CN_Kam_Rieng.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 209220
+    },
+    {
+      "name": "ASvadek_Home_italic",
+      "filename": "ASvadek_Home_italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 292036
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-ExtraBold",
+      "filename": "NotoSerifKhmer_SemiCondensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141900
+    },
+    {
+      "name": "Taprom",
+      "filename": "Taprom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 331876
+    },
+    {
+      "name": "Nokora-Light",
+      "filename": "Nokora-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 33056
+    },
+    {
+      "name": "Nokora-Medium",
+      "filename": "Nokora-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 32872
+    },
+    {
+      "name": "Moul-Regular",
+      "filename": "Moul-Regular.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 164880
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-ExtraBold",
+      "filename": "NotoSansKhmer_SemiCondensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106580
+    },
+    {
+      "name": "Taprom-Regular",
+      "filename": "Taprom-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 202316
+    },
+    {
+      "name": "Khmer_CN_Kam_Rieng_V2",
+      "filename": "Khmer_CN_Kam_Rieng_V2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 158448
+    },
+    {
+      "name": "Khmer_Pailin",
+      "filename": "Khmer_Pailin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 198540
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Bold",
+      "filename": "NotoSansKhmer_ExtraCondensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106308
+    },
+    {
+      "name": "KhmerOSmetalchrieng",
+      "filename": "KhmerOSmetalchrieng.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 224984
+    },
+    {
+      "name": "Mondulkiri-R",
+      "filename": "Mondulkiri-R.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 956392
+    },
+    {
+      "name": "Suwannaphum-Bold",
+      "filename": "Suwannaphum-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 102816
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Bold",
+      "filename": "NotoSerifKhmer_SemiCondensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141784
+    },
+    {
+      "name": "NiDASowanaphum",
+      "filename": "NiDASowanaphum.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 223652
+    },
+    {
+      "name": "Angkor-Regular",
+      "filename": "Angkor-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 79168
+    },
+    {
+      "name": "khmer_ikhmerstudents",
+      "filename": "khmer_ikhmerstudents.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 377836
+    },
+    {
+      "name": "Khmer-PenChantrea",
+      "filename": "Khmer-PenChantrea.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 58016
+    },
+    {
+      "name": "Nokora-ExtraLight",
+      "filename": "Nokora-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 33092
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Black",
+      "filename": "NotoSerifKhmer_Condensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141740
+    },
+    {
+      "name": "KantumruyPro-ThinItalic",
+      "filename": "KantumruyPro-ThinItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102232
+    },
+    {
+      "name": "ChantreaSRui_New",
+      "filename": "ChantreaSRui_New.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 289576
+    },
+    {
+      "name": "KhmerOSBassac",
+      "filename": "KhmerOSBassac.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 238992
+    },
+    {
+      "name": "KhmerOSmuolpali",
+      "filename": "KhmerOSmuolpali.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 140748
+    },
+    {
+      "name": "Kh_KompongThom_-_Bunly_(Beta)",
+      "filename": "Kh_KompongThom_-_Bunly_(Beta).ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 434992
+    },
+    {
+      "name": "Moulpali-Regular",
+      "filename": "Moulpali-Regular.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 99208
+    },
+    {
+      "name": "KhmerDLStation_TNRB",
+      "filename": "KhmerDLStation_TNRB.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 268844
+    },
+    {
+      "name": "KhmerOSsys",
+      "filename": "KhmerOSsys.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 265624
+    },
+    {
+      "name": "AKbalthom_Freehand_[Version_1.50]_082014",
+      "filename": "AKbalthom_Freehand_[Version_1.50]_082014.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 435724
+    },
+    {
+      "name": "Hanuman-Light",
+      "filename": "Hanuman-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59200
+    },
+    {
+      "name": "KHMOLD",
+      "filename": "KHMOLD.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 179792
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-ExtraLight",
+      "filename": "NotoSansKhmer_Condensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106828
+    },
+    {
+      "name": "NiDABayon",
+      "filename": "NiDABayon.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 78176
+    },
+    {
+      "name": "KHMCHANTHA",
+      "filename": "KHMCHANTHA.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 216736
+    },
+    {
+      "name": "KhmerOSKoulen",
+      "filename": "KhmerOSKoulen.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 207260
+    },
+    {
+      "name": "Moulpali",
+      "filename": "Moulpali.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 308668
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-ExtraLight",
+      "filename": "NotoSerifKhmer_Condensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141932
+    },
+    {
+      "name": "KhUniR1",
+      "filename": "KhUniR1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 169028
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Black",
+      "filename": "NotoSansKhmer_ExtraCondensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106172
+    },
+    {
+      "name": "Hanuman-SemiBold",
+      "filename": "Hanuman-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 58976
+    },
+    {
+      "name": "KhmerOSNew-Bold",
+      "filename": "KhmerOSNew-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 297392
+    },
+    {
+      "name": "AKbalthom_Superhero",
+      "filename": "AKbalthom_Superhero.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 247116
+    },
+    {
+      "name": "NotoSerifKhmer-VariableFont_wdth,wght",
+      "filename": "NotoSerifKhmer-VariableFont_wdth,wght.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 497948
+    },
+    {
+      "name": "KonkhmerSleokchher-Regular",
+      "filename": "KonkhmerSleokchher-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1745628
+    },
+    {
+      "name": "Khmer_CN_Kampingpouy",
+      "filename": "Khmer_CN_Kampingpouy.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 316352
+    },
+    {
+      "name": "Khmer_SN_Kampot",
+      "filename": "Khmer_SN_Kampot.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 217044
+    },
+    {
+      "name": "KhmerOSmuol_1",
+      "filename": "KhmerOSmuol_1.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 320372
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Regular",
+      "filename": "NotoSerifKhmer_Condensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141712
+    },
+    {
+      "name": "KhmerOSKangrey",
+      "filename": "KhmerOSKangrey.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 264920
+    },
+    {
+      "name": "Freehand",
+      "filename": "Freehand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 462012
+    },
+    {
+      "name": "KohSantepheap-Thin",
+      "filename": "KohSantepheap-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 163656
+    },
+    {
+      "name": "Kh_SN_Beysach",
+      "filename": "Kh_SN_Beysach.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 2145136
+    },
+    {
+      "name": "KantumruyPro-LightItalic",
+      "filename": "KantumruyPro-LightItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102316
+    },
+    {
+      "name": "ASvadek_Hongkbach",
+      "filename": "ASvadek_Hongkbach.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 699368
+    },
+    {
+      "name": "KantumruyPro-MediumItalic",
+      "filename": "KantumruyPro-MediumItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102352
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Black",
+      "filename": "NotoSansKhmer_SemiCondensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106416
+    },
+    {
+      "name": "AKbalthom_KhmerGothic_[Version_1.30]",
+      "filename": "AKbalthom_KhmerGothic_[Version_1.30].ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 423584
+    },
+    {
+      "name": "Hanuman-Black",
+      "filename": "Hanuman-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59420
+    },
+    {
+      "name": "Kh-Siemreap",
+      "filename": "Kh-Siemreap.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 163296
+    },
+    {
+      "name": "Nokora-Regular",
+      "filename": "Nokora-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 50804
+    },
+    {
+      "name": "Battambang-Regular_1",
+      "filename": "Battambang-Regular_1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 115516
+    },
+    {
+      "name": "Khmer_SN_Kampongcham",
+      "filename": "Khmer_SN_Kampongcham.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 127312
+    },
+    {
+      "name": "khmer_Samady_KS-v2_",
+      "filename": "khmer_Samady_KS-v2_.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 390208
+    },
+    {
+      "name": "Mondulkiri-BI",
+      "filename": "Mondulkiri-BI.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 856120
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Light",
+      "filename": "NotoSansKhmer_SemiCondensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106776
+    },
+    {
+      "name": "Bokor",
+      "filename": "Bokor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 349240
+    },
+    {
+      "name": "AKbalthom_KhmerNew_[Version_1.30]",
+      "filename": "AKbalthom_KhmerNew_[Version_1.30].ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 245944
+    },
+    {
+      "name": "NotoSerifKhmer-Bold",
+      "filename": "NotoSerifKhmer-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141712
+    },
+    {
+      "name": "Mo5V56Bu",
+      "filename": "Mo5V56Bu.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537560
+    },
+    {
+      "name": "Kh-System",
+      "filename": "Kh-System.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 198720
+    },
+    {
+      "name": "NiDAKhmerEmpire",
+      "filename": "NiDAKhmerEmpire.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 196512
+    },
+    {
+      "name": "Metal-Regular",
+      "filename": "Metal-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141316
+    },
+    {
+      "name": "ASvadek_Edge",
+      "filename": "ASvadek_Edge.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 494192
+    },
+    {
+      "name": "khmer_victorya_jrung",
+      "filename": "khmer_victorya_jrung.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 203608
+    },
+    {
+      "name": "KhmerOSMoulpali",
+      "filename": "KhmerOSMoulpali.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 292316
+    },
+    {
+      "name": "NotoSansKhmer-ExtraBold",
+      "filename": "NotoSansKhmer-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106328
+    },
+    {
+      "name": "Content-Bold",
+      "filename": "Content-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 306292
+    },
+    {
+      "name": "kmSBBICsf",
+      "filename": "kmSBBICsf.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 199024
+    },
+    {
+      "name": "Metal",
+      "filename": "Metal.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 409660
+    },
+    {
+      "name": "KohSantepheap-Light",
+      "filename": "KohSantepheap-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 157268
+    },
+    {
+      "name": "NotoSansKhmer-Medium",
+      "filename": "NotoSansKhmer-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106236
+    },
+    {
+      "name": "Khmer_CN_Star",
+      "filename": "Khmer_CN_Star.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 207120
+    },
+    {
+      "name": "Khmer_CN_Kselus",
+      "filename": "Khmer_CN_Kselus.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 229884
+    },
+    {
+      "name": "Khmer_Rotanak_Angkor_Demo_02",
+      "filename": "Khmer_Rotanak_Angkor_Demo_02.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 3082220
+    },
+    {
+      "name": "Khmer-Khao-I-Dang",
+      "filename": "Khmer-Khao-I-Dang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 279156
+    },
+    {
+      "name": "kh_itsupport4kh",
+      "filename": "kh_itsupport4kh.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 251224
+    },
+    {
+      "name": "AngTasom",
+      "filename": "AngTasom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 219964
+    },
+    {
+      "name": "kMons40V2E3",
+      "filename": "kMons40V2E3.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1333004
+    },
+    {
+      "name": "KhmerOSfreehand",
+      "filename": "KhmerOSfreehand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 238028
+    },
+    {
+      "name": "AKbalthom_KhmerLer_[Version_2.00]",
+      "filename": "AKbalthom_KhmerLer_[Version_2.00].ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 368332
+    },
+    {
+      "name": "iSeth_Z11",
+      "filename": "iSeth_Z11.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 285588
+    },
+    {
+      "name": "Suwannaphum-Regular",
+      "filename": "Suwannaphum-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 96636
+    },
+    {
+      "name": "khmer_Savuth_Romeas",
+      "filename": "khmer_Savuth_Romeas.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 302628
+    },
+    {
+      "name": "KhmerOSmuol",
+      "filename": "KhmerOSmuol.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 238376
+    },
+    {
+      "name": "Khmer_Banteay_Srey_B",
+      "filename": "Khmer_Banteay_Srey_B.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 715072
+    },
+    {
+      "name": "kMons60bV2E3s",
+      "filename": "kMons60bV2E3s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 444924
+    },
+    {
+      "name": "Nokora-Black",
+      "filename": "Nokora-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 33196
+    },
+    {
+      "name": "Khmer-Angkulileka_v2",
+      "filename": "Khmer-Angkulileka_v2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 408244
+    },
+    {
+      "name": "Kh_Digital_Thom",
+      "filename": "Kh_Digital_Thom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 364864
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-SemiBold",
+      "filename": "NotoSerifKhmer_ExtraCondensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141772
+    },
+    {
+      "name": "Hanuman-Thin",
+      "filename": "Hanuman-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59240
+    },
+    {
+      "name": "KhmerMuol",
+      "filename": "KhmerMuol.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 253428
+    },
+    {
+      "name": "KdamThmor-Regular",
+      "filename": "KdamThmor-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59436
+    },
+    {
+      "name": "Khmer_Pen_Svayreing",
+      "filename": "Khmer_Pen_Svayreing.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141584
+    },
+    {
+      "name": "KhmerOSbattambang",
+      "filename": "KhmerOSbattambang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 207552
+    },
+    {
+      "name": "NotoSansKhmer-Bold",
+      "filename": "NotoSansKhmer-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 47032
+    },
+    {
+      "name": "TaPich",
+      "filename": "TaPich.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 253696
+    },
+    {
+      "name": "KHMWATPHNOM",
+      "filename": "KHMWATPHNOM.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 273748
+    },
+    {
+      "name": "Romnea-Italic",
+      "filename": "Romnea-Italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 410608
+    },
+    {
+      "name": "Khmer_DonBosco",
+      "filename": "Khmer_DonBosco.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 216732
+    },
+    {
+      "name": "NotoSansKhmerUI-Regular",
+      "filename": "NotoSansKhmerUI-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 53036
+    },
+    {
+      "name": "ASvadek_Writehand",
+      "filename": "ASvadek_Writehand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 424108
+    },
+    {
+      "name": "kMons40spcV2E3s",
+      "filename": "kMons40spcV2E3s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 481916
+    },
+    {
+      "name": "Mo5V56",
+      "filename": "Mo5V56.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 518276
+    },
+    {
+      "name": "AngTaso",
+      "filename": "AngTaso.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 229864
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Thin",
+      "filename": "NotoSansKhmer_Condensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106796
+    },
+    {
+      "name": "OdorMeanChey-Regular",
+      "filename": "OdorMeanChey-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 102764
+    },
+    {
+      "name": "KHMCHRIENG1",
+      "filename": "KHMCHRIENG1.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 262608
+    },
+    {
+      "name": "ASvadek_Momo_W-italic",
+      "filename": "ASvadek_Momo_W-italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 535208
+    },
+    {
+      "name": "Kh_CN_Star",
+      "filename": "Kh_CN_Star.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1969044
+    },
+    {
+      "name": "KhmerOSNew-Regular",
+      "filename": "KhmerOSNew-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 310420
+    },
+    {
+      "name": "ASvadek_FastHand_Bold",
+      "filename": "ASvadek_FastHand_Bold.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 600068
+    },
+    {
+      "name": "kh_Kompong_Chhnang",
+      "filename": "kh_Kompong_Chhnang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 303260
+    },
+    {
+      "name": "Fasthand-Regular",
+      "filename": "Fasthand-Regular.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 124828
+    },
+    {
+      "name": "Kh_SomborPreyKok_-_Bunly_(beta)",
+      "filename": "Kh_SomborPreyKok_-_Bunly_(beta).ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 479560
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Bold",
+      "filename": "NotoSansKhmer_Condensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106388
+    },
+    {
+      "name": "khmer_s2.volt",
+      "filename": "khmer_s2.volt.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 234428
+    },
+    {
+      "name": "KhmerSerif",
+      "filename": "KhmerSerif.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 162532
+    },
+    {
+      "name": "Suwannaphum-Thin",
+      "filename": "Suwannaphum-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 102144
+    },
+    {
+      "name": "Battambang-Bold",
+      "filename": "Battambang-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 72680
+    },
+    {
+      "name": "SithiManuss",
+      "filename": "SithiManuss.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 313516
+    },
+    {
+      "name": "Mo5V56do",
+      "filename": "Mo5V56do.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 538048
+    },
+    {
+      "name": "khmer_s3.volt",
+      "filename": "khmer_s3.volt.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 260612
+    },
+    {
+      "name": "Kh_MPS_Fasthand",
+      "filename": "Kh_MPS_Fasthand.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 526652
+    },
+    {
+      "name": "NotoSansKhmer-Regular",
+      "filename": "NotoSansKhmer-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 48644
+    },
+    {
+      "name": "AKbalthom_KhmerLight",
+      "filename": "AKbalthom_KhmerLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 264320
+    },
+    {
+      "name": "kh_itkonkhmer",
+      "filename": "kh_itkonkhmer.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 273328
+    },
+    {
+      "name": "Kh-Koulen",
+      "filename": "Kh-Koulen.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 81164
+    },
+    {
+      "name": "Preahvihear",
+      "filename": "Preahvihear.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 253968
+    },
+    {
+      "name": "Khmer_Banteay_Srey_L",
+      "filename": "Khmer_Banteay_Srey_L.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1104432
+    },
+    {
+      "name": "Khmer_CN_lazywrite",
+      "filename": "Khmer_CN_lazywrite.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 223024
+    },
+    {
+      "name": "Kh-Fasthand",
+      "filename": "Kh-Fasthand.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 259404
+    },
+    {
+      "name": "ASvadek_Frightened",
+      "filename": "ASvadek_Frightened.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1882260
+    },
+    {
+      "name": "AKbalthom_Ream_[Version_2.00]_082014",
+      "filename": "AKbalthom_Ream_[Version_2.00]_082014.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 275548
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-ExtraBold",
+      "filename": "NotoSerifKhmer_Condensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141796
+    },
+    {
+      "name": "Kh_Writehand_Jrung",
+      "filename": "Kh_Writehand_Jrung.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 342872
+    },
+    {
+      "name": "ASvadek_KbachVora",
+      "filename": "ASvadek_KbachVora.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1915212
+    },
+    {
+      "name": "Kh-Bokor",
+      "filename": "Kh-Bokor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 223500
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Light",
+      "filename": "NotoSansKhmer_Condensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106780
+    },
+    {
+      "name": "KantumruyPro-Italic-VariableFont_wght",
+      "filename": "KantumruyPro-Italic-VariableFont_wght.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 215980
+    },
+    {
+      "name": "khmer_victorya_treykrim",
+      "filename": "khmer_victorya_treykrim.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 198580
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-ExtraBold",
+      "filename": "NotoSerifKhmer_ExtraCondensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141776
+    },
+    {
+      "name": "Kh_Pen_Wappathor",
+      "filename": "Kh_Pen_Wappathor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 110900
+    },
+    {
+      "name": "KantumruyPro-ExtraLightItalic",
+      "filename": "KantumruyPro-ExtraLightItalic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 102448
+    },
+    {
+      "name": "NotoSerifKhmer-ExtraBold",
+      "filename": "NotoSerifKhmer-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141852
+    },
+    {
+      "name": "DaunKeo",
+      "filename": "DaunKeo.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 216408
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Light",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141828
+    },
+    {
+      "name": "KhmerOSwatphnom",
+      "filename": "KhmerOSwatphnom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 236276
+    },
+    {
+      "name": "DaunTep",
+      "filename": "DaunTep.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 207276
+    },
+    {
+      "name": "NiDATaprom",
+      "filename": "NiDATaprom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 201828
+    },
+    {
+      "name": "KhmerOSApsra",
+      "filename": "KhmerOSApsra.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 243112
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-Medium",
+      "filename": "NotoSansKhmer_Condensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106392
+    },
+    {
+      "name": "mond40uhgs",
+      "filename": "mond40uhgs.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 882544
+    },
+    {
+      "name": "iSeth_Pi",
+      "filename": "iSeth_Pi.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 318428
+    },
+    {
+      "name": "DaunPov",
+      "filename": "DaunPov.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 239212
+    },
+    {
+      "name": "NotoSansKhmer-Black",
+      "filename": "NotoSansKhmer-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106188
+    },
+    {
+      "name": "khmer_Savuth",
+      "filename": "khmer_Savuth.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 393696
+    },
+    {
+      "name": "KhmerMoul",
+      "filename": "KhmerMoul.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 172872
+    },
+    {
+      "name": "Khmer_sexy",
+      "filename": "Khmer_sexy.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 137376
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Medium",
+      "filename": "NotoSansKhmer_ExtraCondensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106332
+    },
+    {
+      "name": "Khmer_CN_EkPhnom",
+      "filename": "Khmer_CN_EkPhnom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 153632
+    },
+    {
+      "name": "AKbalthom_Seoul",
+      "filename": "AKbalthom_Seoul.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 372484
+    },
+    {
+      "name": "NotoSansKhmer-Light",
+      "filename": "NotoSansKhmer-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106396
+    },
+    {
+      "name": "KohSantepheap-Black",
+      "filename": "KohSantepheap-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 140552
+    },
+    {
+      "name": "Khmvanara",
+      "filename": "Khmvanara.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 242932
+    },
+    {
+      "name": "Mo5V56MO",
+      "filename": "Mo5V56MO.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537516
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-ExtraLight",
+      "filename": "NotoSerifKhmer_ExtraCondensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141780
+    },
+    {
+      "name": "ASvadek_FastHand_Bold-Italic",
+      "filename": "ASvadek_FastHand_Bold-Italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 621188
+    },
+    {
+      "name": "KhUniSerif",
+      "filename": "KhUniSerif.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 162644
+    },
+    {
+      "name": "KhmerOSclassic",
+      "filename": "KhmerOSclassic.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 309600
+    },
+    {
+      "name": "KHMKAMPOT",
+      "filename": "KHMKAMPOT.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 177876
+    },
+    {
+      "name": "DH-Rongdomrey",
+      "filename": "DH-Rongdomrey.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 240952
+    },
+    {
+      "name": "NiDAAngkor",
+      "filename": "NiDAAngkor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 129692
+    },
+    {
+      "name": "KhmerRotanakTraiyB",
+      "filename": "KhmerRotanakTraiyB.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 715780
+    },
+    {
+      "name": "KHMNETTRA",
+      "filename": "KHMNETTRA.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 234364
+    },
+    {
+      "name": "Kantumruy-Bold",
+      "filename": "Kantumruy-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 45056
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Thin",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141728
+    },
+    {
+      "name": "Hanuman-ExtraLight",
+      "filename": "Hanuman-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 59296
+    },
+    {
+      "name": "PhnomPOT_Krung_gr",
+      "filename": "PhnomPOT_Krung_gr.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 522908
+    },
+    {
+      "name": "ASvadek_Wave",
+      "filename": "ASvadek_Wave.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 707596
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Bold",
+      "filename": "NotoSansKhmer_SemiCondensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106516
+    },
+    {
+      "name": "Kh-Dangrek",
+      "filename": "Kh-Dangrek.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 90152
+    },
+    {
+      "name": "ASvadek_FastHand_Italic",
+      "filename": "ASvadek_FastHand_Italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 620116
+    },
+    {
+      "name": "ASvadek_Brushline",
+      "filename": "ASvadek_Brushline.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 3591896
+    },
+    {
+      "name": "KohSantepheap-Regular",
+      "filename": "KohSantepheap-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 163408
+    },
+    {
+      "name": "KhmerOSBattambang-Bold",
+      "filename": "KhmerOSBattambang-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 296428
+    },
+    {
+      "name": "Kh_BL_LazyDistorted",
+      "filename": "Kh_BL_LazyDistorted.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1557656
+    },
+    {
+      "name": "KhmerOSniroth",
+      "filename": "KhmerOSniroth.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 241968
+    },
+    {
+      "name": "AntiochText",
+      "filename": "AntiochText.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 222464
+    },
+    {
+      "name": "KhmerOSmuollight",
+      "filename": "KhmerOSmuollight.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 232832
+    },
+    {
+      "name": "Kh_Jrung_Thom",
+      "filename": "Kh_Jrung_Thom.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 225020
+    },
+    {
+      "name": "Kantumruy-Regular",
+      "filename": "Kantumruy-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 45572
+    },
+    {
+      "name": "KhmerOSContent-Bold",
+      "filename": "KhmerOSContent-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 289516
+    },
+    {
+      "name": "Mondulkiri-B",
+      "filename": "Mondulkiri-B.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 891672
+    },
+    {
+      "name": "Khmer-Pen_Teu",
+      "filename": "Khmer-Pen_Teu.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 44820
+    },
+    {
+      "name": "Mo5V56dc",
+      "filename": "Mo5V56dc.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537532
+    },
+    {
+      "name": "Battambang-Black",
+      "filename": "Battambang-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 103004
+    },
+    {
+      "name": "Khmer_CN_Phnom_Sampao",
+      "filename": "Khmer_CN_Phnom_Sampao.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 179876
+    },
+    {
+      "name": "NotoSansKhmer-SemiBold",
+      "filename": "NotoSansKhmer-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106224
+    },
+    {
+      "name": "Khmer_CN_ThmorKol",
+      "filename": "Khmer_CN_ThmorKol.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 210440
+    },
+    {
+      "name": "Kh-Metal-Chrieng",
+      "filename": "Kh-Metal-Chrieng.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 257056
+    },
+    {
+      "name": "Moul",
+      "filename": "Moul.ttf",
+      "style": "Ornate / Title (Moul / មូល)",
+      "size_bytes": 386968
+    },
+    {
+      "name": "KantumruyPro-Thin",
+      "filename": "KantumruyPro-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93292
+    },
+    {
+      "name": "Angkor",
+      "filename": "Angkor.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 266096
+    },
+    {
+      "name": "NotoSerifKhmer-Medium",
+      "filename": "NotoSerifKhmer-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141744
+    },
+    {
+      "name": "KHMERMEF2",
+      "filename": "KHMERMEF2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 317376
+    },
+    {
+      "name": "AKbalthom_SuperheroKH",
+      "filename": "AKbalthom_SuperheroKH.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 247844
+    },
+    {
+      "name": "NotoSerifKhmer-SemiBold",
+      "filename": "NotoSerifKhmer-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141812
+    },
+    {
+      "name": "KohSantepheap-Bold",
+      "filename": "KohSantepheap-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 152876
+    },
+    {
+      "name": "U4SvaytonNew",
+      "filename": "U4SvaytonNew.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 263328
+    },
+    {
+      "name": "Kh-KoulenL",
+      "filename": "Kh-KoulenL.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 114700
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Light",
+      "filename": "NotoSerifKhmer_Condensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141860
+    },
+    {
+      "name": "KhmerOSMetalchrieng",
+      "filename": "KhmerOSMetalchrieng.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 392920
+    },
+    {
+      "name": "DaunTeav",
+      "filename": "DaunTeav.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 226756
+    },
+    {
+      "name": "ASvadek_KampucheaLove",
+      "filename": "ASvadek_KampucheaLove.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 408096
+    },
+    {
+      "name": "Bayon",
+      "filename": "Bayon.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 248208
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Thin",
+      "filename": "NotoSansKhmer_SemiCondensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106856
+    },
+    {
+      "name": "KHMMOOL",
+      "filename": "KHMMOOL.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 341652
+    },
+    {
+      "name": "Khmer_Banteay_Srey",
+      "filename": "Khmer_Banteay_Srey.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 711568
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Thin",
+      "filename": "NotoSerifKhmer_Condensed-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141840
+    },
+    {
+      "name": "Khmer_Beginner",
+      "filename": "Khmer_Beginner.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 219980
+    },
+    {
+      "name": "KhmerTelecommunication",
+      "filename": "KhmerTelecommunication.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 164004
+    },
+    {
+      "name": "AKbalthom_Kbach_[Version_1.50]_082014",
+      "filename": "AKbalthom_Kbach_[Version_1.50]_082014.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 832912
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-SemiBold",
+      "filename": "NotoSerifKhmer_Condensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141844
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Bold",
+      "filename": "NotoSerifKhmer_Condensed-Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141724
+    },
+    {
+      "name": "NotoSansKhmer-ExtraLight",
+      "filename": "NotoSansKhmer-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106484
+    },
+    {
+      "name": "khmer_M1.volt",
+      "filename": "khmer_M1.volt.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 238968
+    },
+    {
+      "name": "Khmer_CN_Preykonkla",
+      "filename": "Khmer_CN_Preykonkla.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 123040
+    },
+    {
+      "name": "Nokora-SemiBold",
+      "filename": "Nokora-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 32980
+    },
+    {
+      "name": "NotoSansKhmer-Thin",
+      "filename": "NotoSansKhmer-Thin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106420
+    },
+    {
+      "name": "NotoSerifKhmer-Black",
+      "filename": "NotoSerifKhmer-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141716
+    },
+    {
+      "name": "Kh_Prey_Veng",
+      "filename": "Kh_Prey_Veng.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 296028
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Medium",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141804
+    },
+    {
+      "name": "iKampuchea002_KhmerFeeling",
+      "filename": "iKampuchea002_KhmerFeeling.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 487684
+    },
+    {
+      "name": "Kh-Content",
+      "filename": "Kh-Content.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 182164
+    },
+    {
+      "name": "Koulen-Regular",
+      "filename": "Koulen-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 55724
+    },
+    {
+      "name": "AKbalthom_Naga_Bold",
+      "filename": "AKbalthom_Naga_Bold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 286440
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-Regular",
+      "filename": "NotoSansKhmer_SemiCondensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106356
+    },
+    {
+      "name": "ASvadek_Air",
+      "filename": "ASvadek_Air.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 1220684
+    },
+    {
+      "name": "KantumruyPro-VariableFont_wght",
+      "filename": "KantumruyPro-VariableFont_wght.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 197032
+    },
+    {
+      "name": "KdamThmorPro-Regular",
+      "filename": "KdamThmorPro-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 85348
+    },
+    {
+      "name": "KantumruyPro-ExtraLight",
+      "filename": "KantumruyPro-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93560
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-SemiBold",
+      "filename": "NotoSansKhmer_SemiCondensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106508
+    },
+    {
+      "name": "Mo8V56",
+      "filename": "Mo8V56.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 458584
+    },
+    {
+      "name": "Khmer_CN_Battambang",
+      "filename": "Khmer_CN_Battambang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 219360
+    },
+    {
+      "name": "NotoSansKhmer-VariableFont_wdth,wght",
+      "filename": "NotoSansKhmer-VariableFont_wdth,wght.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 359444
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Black",
+      "filename": "NotoSerifKhmer_SemiCondensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141840
+    },
+    {
+      "name": "KHMKOLAB",
+      "filename": "KHMKOLAB.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 239328
+    },
+    {
+      "name": "KhmerOSkiensvay",
+      "filename": "KhmerOSkiensvay.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 241220
+    },
+    {
+      "name": "Content-Regular",
+      "filename": "Content-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 313092
+    },
+    {
+      "name": "NotoSerifKhmer_Condensed-Medium",
+      "filename": "NotoSerifKhmer_Condensed-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141820
+    },
+    {
+      "name": "ChantreaUI",
+      "filename": "ChantreaUI.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 315484
+    },
+    {
+      "name": "Mo5V56xs",
+      "filename": "Mo5V56xs.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 537560
+    },
+    {
+      "name": "NotoSerifKhmer-ExtraLight",
+      "filename": "NotoSerifKhmer-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141940
+    },
+    {
+      "name": "KHMKAMPONGTRACH",
+      "filename": "KHMKAMPONGTRACH.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 238864
+    },
+    {
+      "name": "Hanuman-VariableFont_wght",
+      "filename": "Hanuman-VariableFont_wght.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 126316
+    },
+    {
+      "name": "KunKhmer",
+      "filename": "KunKhmer.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 258760
+    },
+    {
+      "name": "NotoSansKhmer_SemiCondensed-ExtraLight",
+      "filename": "NotoSansKhmer_SemiCondensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106964
+    },
+    {
+      "name": "ASvadek_Kbach_S",
+      "filename": "ASvadek_Kbach_S.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 418900
+    },
+    {
+      "name": "Battambang-Regular",
+      "filename": "Battambang-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 89644
+    },
+    {
+      "name": "NiDAFunan",
+      "filename": "NiDAFunan.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 245116
+    },
+    {
+      "name": "Khmer_Pen_Kang",
+      "filename": "Khmer_Pen_Kang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 51712
+    },
+    {
+      "name": "Khmer_Element",
+      "filename": "Khmer_Element.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 681660
+    },
+    {
+      "name": "ASvadek_FreeHandb",
+      "filename": "ASvadek_FreeHandb.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 553864
+    },
+    {
+      "name": "KhUniN2",
+      "filename": "KhUniN2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 154748
+    },
+    {
+      "name": "AKbalthom_KhmerBasic",
+      "filename": "AKbalthom_KhmerBasic.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 440624
+    },
+    {
+      "name": "Kh_Kakada_Bati_[Version_1.10]",
+      "filename": "Kh_Kakada_Bati_[Version_1.10].ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 240348
+    },
+    {
+      "name": "Khmer_CN_hand",
+      "filename": "Khmer_CN_hand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 205956
+    },
+    {
+      "name": "AKbalthom_HighSchool",
+      "filename": "AKbalthom_HighSchool.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 205096
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-Light",
+      "filename": "NotoSerifKhmer_SemiCondensed-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141928
+    },
+    {
+      "name": "Suwannaphum-Black",
+      "filename": "Suwannaphum-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 100760
+    },
+    {
+      "name": "KDJayavarman1",
+      "filename": "KDJayavarman1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 135632
+    },
+    {
+      "name": "KHMMOOL1",
+      "filename": "KHMMOOL1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 328076
+    },
+    {
+      "name": "Kh_SN_Preytakoy",
+      "filename": "Kh_SN_Preytakoy.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 380596
+    },
+    {
+      "name": "Mo9V55",
+      "filename": "Mo9V55.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 423684
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-SemiBold",
+      "filename": "NotoSansKhmer_Condensed-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106516
+    },
+    {
+      "name": "KantumruyPro-Light",
+      "filename": "KantumruyPro-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93528
+    },
+    {
+      "name": "Kh_BL_BrushHand",
+      "filename": "Kh_BL_BrushHand.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 336164
+    },
+    {
+      "name": "NotoSerifKhmer_ExtraCondensed-Black",
+      "filename": "NotoSerifKhmer_ExtraCondensed-Black.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 141660
+    },
+    {
+      "name": "NotoSansKhmer_Condensed-ExtraBold",
+      "filename": "NotoSansKhmer_Condensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106436
+    },
+    {
+      "name": "Khmer_CN_Bone",
+      "filename": "Khmer_CN_Bone.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 988932
+    },
+    {
+      "name": "Mo5V56i",
+      "filename": "Mo5V56i.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 504460
+    },
+    {
+      "name": "Khmer_Sem_Sarun",
+      "filename": "Khmer_Sem_Sarun.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 700868
+    },
+    {
+      "name": "Battambang-Light",
+      "filename": "Battambang-Light.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 100016
+    },
+    {
+      "name": "Kh_itseombel_Jrung_-_bunly",
+      "filename": "Kh_itseombel_Jrung_-_bunly.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 221416
+    },
+    {
+      "name": "Kh-Battambang",
+      "filename": "Kh-Battambang.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 197624
+    },
+    {
+      "name": "ASvadek_Wave_Italic",
+      "filename": "ASvadek_Wave_Italic.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 719172
+    },
+    {
+      "name": "Khmer_Pen-Surin",
+      "filename": "Khmer_Pen-Surin.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 194120
+    },
+    {
+      "name": "Kh-Kangrey",
+      "filename": "Kh-Kangrey.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 158316
+    },
+    {
+      "name": "SamsungKhmer-Regular",
+      "filename": "SamsungKhmer-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 84636
+    },
+    {
+      "name": "Mondulkiri-I",
+      "filename": "Mondulkiri-I.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 908008
+    },
+    {
+      "name": "ASvadek_EdgeHollow",
+      "filename": "ASvadek_EdgeHollow.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 746380
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-ExtraBold",
+      "filename": "NotoSansKhmer_ExtraCondensed-ExtraBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106312
+    },
+    {
+      "name": "iSeth_First",
+      "filename": "iSeth_First.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 235900
+    },
+    {
+      "name": "Hanuman-Medium",
+      "filename": "Hanuman-Medium.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 58948
+    },
+    {
+      "name": "NotoSerifKhmer_SemiCondensed-ExtraLight",
+      "filename": "NotoSerifKhmer_SemiCondensed-ExtraLight.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 142084
+    },
+    {
+      "name": "Khmer",
+      "filename": "Khmer.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 77684
+    },
+    {
+      "name": "KhmerOSsiemreap",
+      "filename": "KhmerOSsiemreap.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 132220
+    },
+    {
+      "name": "ASvadek_Blade",
+      "filename": "ASvadek_Blade.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 173300
+    },
+    {
+      "name": "ASvadek_Home",
+      "filename": "ASvadek_Home.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 281640
+    },
+    {
+      "name": "KH_MPS",
+      "filename": "KH_MPS.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 350384
+    },
+    {
+      "name": "RataV53",
+      "filename": "RataV53.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 401984
+    },
+    {
+      "name": "NotoSansKhmer_ExtraCondensed-Regular",
+      "filename": "NotoSansKhmer_ExtraCondensed-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 106184
+    },
+    {
+      "name": "Dangrek-Regular",
+      "filename": "Dangrek-Regular.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 61928
+    },
+    {
+      "name": "Khmviravuth",
+      "filename": "Khmviravuth.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 271012
+    },
+    {
+      "name": "KantumruyPro-SemiBold",
+      "filename": "KantumruyPro-SemiBold.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 93532
+    },
+    {
+      "name": "KhUniL1",
+      "filename": "KhUniL1.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 150356
+    },
+    {
+      "name": "kMons40dicV2E3s",
+      "filename": "kMons40dicV2E3s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 481900
+    },
+    {
+      "name": "KhUniR2",
+      "filename": "KhUniR2.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 173036
+    },
+    {
+      "name": "Khmer_CN_Otaki",
+      "filename": "Khmer_CN_Otaki.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 239784
+    },
+    {
+      "name": "Khmer_CN_Samlot",
+      "filename": "Khmer_CN_Samlot.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 243280
+    },
+    {
+      "name": "AKbalthom_HighSchool-Frame_[Version_1.10]_082014",
+      "filename": "AKbalthom_HighSchool-Frame_[Version_1.10]_082014.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 340572
+    },
+    {
+      "name": "ASvadek_Ribbon",
+      "filename": "ASvadek_Ribbon.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 625224
+    },
+    {
+      "name": "Chenla",
+      "filename": "Chenla.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 293588
+    },
+    {
+      "name": "Khmer_Pen_SvR",
+      "filename": "Khmer_Pen_SvR.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 153780
+    },
+    {
+      "name": "TimbreKampuchea",
+      "filename": "TimbreKampuchea.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 322656
+    },
+    {
+      "name": "kMon40hV2E3s",
+      "filename": "kMon40hV2E3s.ttf",
+      "style": "Standard Print (Khatt / ខាត់)",
+      "size_bytes": 481896
+    },
+    {
+      "name": "KhmerOSfasthand",
+      "filename": "KhmerOSfasthand.ttf",
+      "style": "Slanted / Cursive (Chrieng / ជ្រៀង)",
+      "size_bytes": 228828
+    }
+  ]
+}

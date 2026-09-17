@@ -69,6 +69,19 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Path to text corpus file to sample from (e.g. data/khmer_wiki_corpus.txt)"
     )
+    synth_parser.add_argument(
+        "--fonts-dir", "--fonts",
+        dest="fonts_dir",
+        default=None,
+        help="Path to custom directory containing downloaded Khmer TrueType/OpenType fonts"
+    )
+    synth_parser.add_argument(
+        "--pure-corpus", "--corpus-only",
+        dest="pure_corpus",
+        action="store_true",
+        default=False,
+        help="Strictly sample 100% from the provided corpus file without RAC phrases or numeric templates"
+    )
 
     # Command: audit
     audit_parser = subparsers.add_parser(
@@ -169,6 +182,59 @@ def build_parser() -> argparse.ArgumentParser:
         "--random", action="store_true", help="Crawl random articles across Wikipedia")
     wiki_parser.add_argument("-o", "--out", "--output", dest="out",
                              default="data/wikipedia_khmer_corpus.txt", help="Output .txt file path")
+    wiki_parser.add_argument(
+        "--allow-latin", "--allow-english",
+        dest="allow_latin",
+        action="store_true",
+        help="Allow lines containing Latin/English words (default: False, strictly pure Khmer)"
+    )
+    wiki_parser.add_argument(
+        "--min-khmer-ratio",
+        dest="min_khmer_ratio",
+        type=float,
+        default=0.70,
+        help="Minimum ratio of Khmer characters per line (default: 0.70)"
+    )
+
+    # Command: download-fonts
+    fonts_parser = subparsers.add_parser(
+        "download-fonts", help="Download, validate Unicode, deduplicate, and catalog Khmer fonts")
+    fonts_parser.add_argument(
+        "-o", "--out", "--fonts-dir",
+        dest="out",
+        default="fonts",
+        help="Target directory to save validated fonts (default: fonts)"
+    )
+    fonts_parser.add_argument(
+        "--source",
+        dest="source",
+        default="all",
+        choices=["all", "sbbic", "sbbic_alt", "7piseth", "chamnan", "khmeros"],
+        help="Specific font source pack to download (default: all)"
+    )
+    fonts_parser.add_argument(
+        "--zip",
+        dest="zip_file",
+        default=None,
+        help="Path to local ZIP file to ingest, validate Unicode cmap, and install"
+    )
+    fonts_parser.add_argument(
+        "--url",
+        dest="custom_url",
+        default=None,
+        help="Custom URL of font ZIP archive to download and validate"
+    )
+    fonts_parser.add_argument(
+        "--folder",
+        dest="custom_folder",
+        default=None,
+        help="Path to local folder of fonts to audit, validate, and install"
+    )
+    fonts_parser.add_argument(
+        "--clean",
+        action="store_true",
+        help="Clean target directory before downloading (preserves README.md)"
+    )
 
     return parser
 
@@ -186,6 +252,7 @@ def main():
     if args.command == "synth":
         from khmer_ocr.synth.generator import KhmerDatasetGenerator
 
+        pure_corpus = getattr(args, "pure_corpus", False)
         sampler = None
         if args.wiki:
             from khmer_ocr.dataset.wikipedia_loader import KhmerWikipediaLoader
@@ -201,7 +268,7 @@ def main():
                     max_articles=articles_count)
             print(f"Harvested {len(sentences):,} sentences from Wikipedia.")
             if sentences:
-                sampler = KhmerCorpusSampler(custom_texts=sentences)
+                sampler = KhmerCorpusSampler(custom_texts=sentences, pure_corpus=pure_corpus)
             else:
                 print(
                     "Notice: No Wikipedia sentences were harvested. Falling back to default corpus sampler.")
@@ -211,19 +278,30 @@ def main():
             if corpus_path.exists():
                 sentences = [line.strip() for line in corpus_path.read_text(encoding="utf-8").splitlines() if line.strip()]
                 print(f"Loaded {len(sentences):,} sentences from corpus: {args.corpus}")
-                sampler = KhmerCorpusSampler(custom_texts=sentences)
+                sampler = KhmerCorpusSampler(custom_texts=sentences, pure_corpus=pure_corpus)
             else:
                 print(f"Warning: Corpus file '{args.corpus}' not found. Falling back to default sampler.")
 
+        fm = None
+        if getattr(args, "fonts_dir", None):
+            from khmer_ocr.synth.fonts import KhmerFontManager
+            fm = KhmerFontManager(custom_dirs=[args.fonts_dir])
+            print(f"Loaded custom fonts from '{args.fonts_dir}': {len(fm.fonts)} Khmer fonts discovered.")
+
         print(f"Generating {args.count} samples into '{args.out}'...")
         gen = KhmerDatasetGenerator(
-            target_height=args.height, corpus_sampler=sampler)
+            font_manager=fm,
+            target_height=args.height,
+            corpus_sampler=sampler,
+            pure_corpus=pure_corpus,
+        )
         labels_file = gen.generate_batch(
             output_dir=args.out,
             num_samples=args.count,
             augment=not args.no_augment,
             val_ratio=args.val_ratio,
             clean_ratio=args.clean_ratio,
+            pure_corpus=pure_corpus,
             progress_callback=lambda cur, tot, msg: print(
                 f"[{cur}/{tot}] {msg}", end="\r"),
         )
@@ -404,11 +482,18 @@ def main():
         from khmer_ocr.dataset.wikipedia_loader import KhmerWikipediaLoader
         loader = KhmerWikipediaLoader()
         print("Connecting to km.wikipedia.org...")
+        allow_latin = getattr(args, "allow_latin", False)
+        min_khmer_ratio = getattr(args, "min_khmer_ratio", 0.70)
+        pure_khmer = not allow_latin
+
         if args.random:
             print(f"Crawling {args.articles} random articles...")
             sentences = loader.harvest_from_random(
                 count=args.articles,
                 progress_callback=lambda c, t, m: print(f"[{c}/{t}] {m}"),
+                pure_khmer=pure_khmer,
+                min_khmer_ratio=min_khmer_ratio,
+                allow_latin=allow_latin,
             )
         elif args.topic:
             print(
@@ -417,6 +502,9 @@ def main():
                 query=args.topic,
                 max_articles=args.articles,
                 progress_callback=lambda c, t, m: print(f"[{c}/{t}] {m}"),
+                pure_khmer=pure_khmer,
+                min_khmer_ratio=min_khmer_ratio,
+                allow_latin=allow_latin,
             )
         else:
             print(
@@ -424,11 +512,39 @@ def main():
             sentences = loader.harvest_from_topics(
                 max_articles=args.articles,
                 progress_callback=lambda c, t, m: print(f"[{c}/{t}] {m}"),
+                pure_khmer=pure_khmer,
+                min_khmer_ratio=min_khmer_ratio,
+                allow_latin=allow_latin,
             )
 
         count = loader.save_corpus(sentences, args.out)
         print(
             f"Done! Successfully harvested {count:,} authentic Khmer sentences into: {args.out}")
+
+    elif args.command == "download-fonts":
+        from khmer_ocr.synth.font_downloader import KhmerFontDownloader
+        downloader = KhmerFontDownloader(output_dir=args.out)
+        print("=" * 60)
+        print("  KHMER FONTS DOWNLOADER & UNICODE VALIDATOR")
+        print("=" * 60)
+        print(f"Target Directory: {Path(args.out).resolve()}")
+        res = downloader.run_download(
+            source=args.source,
+            custom_url=args.custom_url,
+            custom_zip=args.zip_file,
+            custom_folder=args.custom_folder,
+            clean=args.clean,
+        )
+        print("\n" + "=" * 60)
+        print("  DOWNLOAD & VALIDATION SUMMARY")
+        print("=" * 60)
+        print(f"  New Fonts Installed:       +{res['installed']}")
+        print(f"  Duplicates Discarded:       {res['skipped_duplicate']}")
+        print(f"  Non-Khmer/Legacy Excluded:  {res['skipped_non_khmer']}")
+        print(f"  Total Valid Khmer Fonts:    {res['total_fonts_in_dir']}")
+        print(f"  Catalog Saved:              {res['catalog_file']}")
+        print("=" * 60)
+        print(f"Ready for synthesis: uv run --no-sync python run_app.py synth --fonts-dir {args.out} ...")
 
     elif args.command == "infer":
         import torch

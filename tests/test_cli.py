@@ -17,11 +17,16 @@ def test_synth_command_argument_parsing():
     assert args.count == 300
     assert args.out == "data/synthetic_wiki"
 
-    # Alias with -n and --output
-    args2 = parser.parse_args(["synth", "-n", "150", "--output", "data/custom_out", "--topic", "all"])
+    # Alias with -n, --output, --corpus, --fonts-dir
+    args2 = parser.parse_args([
+        "synth", "-n", "150", "--output", "data/custom_out",
+        "--topic", "all", "--fonts-dir", "fonts", "--corpus", "data/corpus.txt"
+    ])
     assert args2.count == 150
     assert args2.out == "data/custom_out"
     assert args2.wiki_topic == "all"
+    assert args2.fonts_dir == "fonts"
+    assert args2.corpus == "data/corpus.txt"
 
 
 def test_train_command_argument_parsing():
@@ -90,6 +95,8 @@ def test_other_subcommand_aliases():
     assert args_wiki.topic == "history"
     assert args_wiki.articles == 20
     assert args_wiki.out == "data/out.txt"
+    assert args_wiki.allow_latin is False
+    assert args_wiki.min_khmer_ratio == 0.70
 
     # audit parser
     args_audit = parser.parse_args(["audit", "--dir", "data/my_dataset"])
@@ -100,3 +107,8 @@ def test_other_subcommand_aliases():
     assert args_infer.image == "doc.png"
     assert args_infer.ckpt == "model.pth"
     assert args_infer.pdf == "doc.pdf"
+
+    # download-fonts parser
+    args_fonts = parser.parse_args(["download-fonts", "--fonts-dir", "custom_fonts", "--source", "sbbic"])
+    assert args_fonts.out == "custom_fonts"
+    assert args_fonts.source == "sbbic"

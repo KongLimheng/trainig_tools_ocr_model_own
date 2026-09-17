@@ -56,29 +56,41 @@ uv run --no-sync python3 run_app.py
 
 ### 2. Command Line Interface (CLI)
 
+## Audit dataset quality and Khmer Unicode
 ```bash
-
-# Audit dataset quality and Khmer Unicode
 uv run --no-sync python3 run_app.py audit --data data/synthetic_train
+```
 
-# Recognize full document image (multi-line page)
+## Recognize full document image (multi-line page)
+```bash
 uv run --no-sync python3 run_app.py infer --image sample_document.png --ckpt checkpoints/best_model.pth --mode doc
+```
 
-# Export model to ONNX
+## Export model to ONNX
+```bash
 uv run --no-sync python3 run_app.py export --ckpt checkpoints/best_model.pth --out exports/khmer_ocr.onnx
+```
 
-# 1. Generate synthetic dataset from Wikipedia (previously failed, now works seamlessly)                                                    
-uv run --no-sync python run_app.py synth  --wiki --samples 300 --out data/synthetic_wiki                                                                                            
-# 2. Fine-tune pre-trained model on the harvested Wikipedia dataset with backbone freezing & adaptive LR                                    
+## 1. Generate synthetic dataset from Wikipedia (previously failed, now works seamlessly)                                                    
+```bash
+uv run --no-sync python run_app.py synth  --wiki --samples 300 --out data/synthetic_wiki
+```
+
+## 2. Fine-tune pre-trained model on the harvested Wikipedia dataset with backbone freezing & adaptive LR                                    
+```bash
 uv run --no-sync python run_app.py train \
---train-dir data/synthetic_wiki \
+--train-dir data/dataset_v2/train \
+--val-dir data/dataset_v2/val \
 --fine-tune checkpoints/best_model.pth \
 --epochs 10 \
 --lr 2e-4 \
 --lr-scheduler plateau \
 --freeze-backbone \
---out-dir checkpoints/wiki_finetuned                                                                                                      
-# 3. Resume training if interrupted (restores exact epoch, optimizer state & best CER)                                                      
+--out-dir checkpoints/wiki_finetuned
+```
+
+## 3. Resume training if interrupted (restores exact epoch, optimizer state & best CER)                                                      
+```bash
 uv run --no-sync python run_app.py train \
       --train-dir data/dataset_v2/train \
       --val-dir data/dataset_v2/val \
@@ -88,33 +100,58 @@ uv run --no-sync python run_app.py train \
       --lr-scheduler plateau \
       --early-stopping 5 \
       --out-dir checkpoints/khmer_ocr_v2
+```
 
-[Training Interrupted by User]
- Progress safely saved to: checkpoints/khmer_ocr_v2/interrupted_checkpoint.pth
- To resume seamlessly, run:
-   uv run --no-sync python run_app.py train --train-dir data/dataset_v2/train --resume checkpoints/khmer_ocr_v2/interrupted_checkpoint.pth
+## To resume seamlessly, run:
+```bash
+uv run --no-sync python run_app.py train --train-dir data/dataset_v2/train --resume checkpoints/khmer_ocr_v2/interrupted_checkpoint.pth
+```
 
 # generate data val, train from txt file
 
-#launched the synthesis of 25,000 balanced Khmer samples into data/dataset_v2 with an automated 10% validation split and 40% clean document contrast.
+## launched the synthesis of 25,000 balanced Khmer samples into data/dataset_v2 with an automated 10% validation split and 40% clean document contrast.
+```bash
 uv run --no-sync python run_app.py synth --corpus data/khmer_wiki_corpus.txt -n 25000 --val-split 0.10 --clean-ratio 0.40 -o data/dataset_v2
+```
+# 4. Download and validate hundreds of authentic Khmer fonts from open-source repositories
+```bash
+uv run --no-sync python run_app.py download-fonts --out fonts
+```
+
+# (Optional) Ingest a custom local ZIP pack of fonts (audits Unicode cmap & deduplicates)
+# uv run --no-sync python run_app.py download-fonts --zip path/to/khmer_fonts.zip --out fonts
+
+## 5. Harvest authentic pure Khmer corpus from Wikipedia (km.wikipedia.org)
+Harvests authentic Khmer text directly from Khmer Wikipedia with automated foreign language & script sanitization (strips Chinese, Thai, English glosses, and wiki metadata):
+```bash
+uv run --no-sync python run_app.py wiki \
+  --topic history \
+  --articles 20 \
+  --out data/wiki_khmer_corpus.txt
+```
+*(Optional: add `--allow-latin` if you explicitly want bilingual sentences containing English words)*
 
 ## generate data set from txt with director fonts
-uv run --no-sync python run_app.py synth --corpus data/khmer_wiki_corpus.txt      --fonts-dir fonts \
+```bash
+uv run --no-sync python run_app.py synth --corpus data/khmer_wiki_corpus.txt \
+  --fonts-dir fonts \
   --samples 35000 \
   --val-split 0.10 \
   --clean-ratio 0.40 \
   --out data/dataset_thousand_fonts
-
-#Reinforcement of rare characters in the training data is complete
+```
+*(Tip: Add `--pure-corpus` to strictly sample 100% directly from your corpus text file without mixing RAC dictionary phrases or numeric templates).*
+# Reinforcement of rare characters in the training data is complete
+```bash
 uv run --no-sync python run_app.py boost --data data/dataset_v2/train --threshold 50
-
-
+```
+```bash
 uv run --no-sync python run_app.py train --train-dir data/dataset_v2/train --val-dir
 data/dataset_v2/val -e 20 --batch-size 32 --lr 5e-4 --lr-scheduler plateau --early-stopping 5 -o
 checkpoints/khmer_ocr_v2
-
-##Train on completed model with new datasets
+```
+## Train on completed model with new datasets
+```bash
 uv run --no-sync python run_app.py train \
       --train-dir data/dataset_thousand_fonts/train \
       --val-dir data/dataset_thousand_fonts/val \

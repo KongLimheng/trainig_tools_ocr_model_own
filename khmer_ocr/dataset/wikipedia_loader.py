@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import List, Dict, Tuple, Optional, Callable
 from ..normalizer import normalize_khmer_text
 from ..normalizer.syllable_parser import split_into_syllables
+from ..postprocess.word_segmenter import chunk_text_by_words
 
 WIKIPEDIA_API_URL = "https://km.wikipedia.org/w/api.php"
 USER_AGENT = "KhmerOCRStudio/1.0 (AI Khmer OCR Training Suite; contact@khmer-ocr.org)"
@@ -61,6 +62,13 @@ CURATED_TOPICS = {
 }
 
 
+# Internal maintenance and meta namespaces on km.wikipedia.org to exclude
+IGNORED_NAMESPACES = (
+    "វិគីភិឌា:", "ជំនួយ:", "ទំព័រគំរូ:", "ឯកសារ:", "ចាត់ថ្នាក់:",
+    "User:", "File:", "Wikipedia:", "Template:", "Portal:", "Special:", "MediaWiki:", "Category:"
+)
+
+
 class KhmerWikipediaLoader:
     """Streams, cleans, and slices authentic text from Khmer Wikipedia (km.wikipedia.org)."""
 
@@ -76,10 +84,13 @@ class KhmerWikipediaLoader:
         params["format"] = "json"
         query_string = urllib.parse.urlencode(params)
         url = f"{WIKIPEDIA_API_URL}?{query_string}"
-        req = urllib.request.Request(url, headers=self.headers)
-        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        return data
+        query_str = urllib.parse.urlencode(params)
+        req = urllib.request.Request(
+            f"{WIKIPEDIA_API_URL}?{query_str}",
+            headers={"User-Agent": USER_AGENT}
+        )
+        with urllib.request.urlopen(req, timeout=self.timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
 
     def fetch_article_extract(self, title: str) -> str:
         """Fetches plain text extract of a single article."""
@@ -98,31 +109,55 @@ class KhmerWikipediaLoader:
         return ""
 
     def search_articles(self, query: str, limit: int = 15) -> List[str]:
-        """Searches for article titles matching a keyword."""
+        """Searches for article titles matching a keyword, excluding maintenance namespaces."""
         params = {
             "action": "query",
             "list": "search",
             "srsearch": query,
-            "srlimit": str(min(limit, 50)),
+            "srlimit": str(min(limit * 2, 50)),
         }
         data = self._api_get(params)
         items = data.get("query", {}).get("search", [])
-        return [item["title"] for item in items if "title" in item]
+        titles = []
+        for item in items:
+            title = item.get("title", "")
+            if title and not any(title.startswith(prefix) for prefix in IGNORED_NAMESPACES):
+                titles.append(title)
+                if len(titles) >= limit:
+                    break
+        return titles
 
     def fetch_random_titles(self, count: int = 15) -> List[str]:
-        """Fetches random article titles."""
+        """Fetches random article titles, excluding maintenance namespaces."""
         params = {
             "action": "query",
             "list": "random",
             "rnnamespace": "0",
-            "rnlimit": str(min(count, 50)),
+            "rnlimit": str(min(count * 2, 50)),
         }
         data = self._api_get(params)
         items = data.get("query", {}).get("random", [])
-        return [item["title"] for item in items if "title" in item]
+        titles = []
+        for item in items:
+            title = item.get("title", "")
+            if title and not any(title.startswith(prefix) for prefix in IGNORED_NAMESPACES):
+                titles.append(title)
+                if len(titles) >= count:
+                    break
+        return titles
 
-    def clean_and_segment_extract(self, extract: str) -> List[str]:
-        """Cleans wikitext extract and segments into authentic Khmer sentence lines."""
+    def clean_and_segment_extract(
+        self,
+        extract: str,
+        pure_khmer: bool = True,
+        min_khmer_ratio: float = 0.70,
+        allow_latin: bool = False,
+    ) -> List[str]:
+        """Cleans wikitext extract and segments into authentic Khmer sentence lines.
+
+        Eliminates parenthetical foreign glosses, non-Khmer scripts (Chinese, Thai, Lao, Cyrillic, etc.),
+        and enforces authentic pure Khmer script lines (0 Latin/English letters by default).
+        """
         if not extract:
             return []
 
@@ -138,15 +173,36 @@ class KhmerWikipediaLoader:
         # 4. Remove URL links and external formatting
         cleaned = re.sub(r"https?://\S+", " ", cleaned)
 
-        # 5. Segment into raw sentence candidates using Khmer full-stop (។), (៕), ?, ! or newlines
-        raw_candidates = re.split(r"[។៕\n\r]+", cleaned)
+        # 5. Strip parenthetical foreign language glosses
+        # e.g. ( ចិន: 土地神屋 អង់គ្លេស: Spirit houses ថៃ: ศាលพระภูมิ )
+        cleaned = re.sub(
+            r"\([^)]*(?:ចិន|ថៃ|អង់គ្លេស|បារាំង|អាល្លឺម៉ង់|រុស្ស៊ី|ឡាតាំង|English|French|Thai|Chinese|German|Latin|ភាសា|ភិងអ៊ិង|Zhōng|[\u4e00-\u9fff\u0e00-\u0eff])[^)]*\)",
+            " ",
+            cleaned
+        )
+        # Strip pure Latin / numeric acronyms inside parentheses e.g. (GDP), (National Assembly), (16th century)
+        cleaned = re.sub(r"\([a-zA-Z0-9\s,.:;\-/'\"]+\)", " ", cleaned)
+
+        # 6. Strip non-Khmer foreign scripts (Chinese/CJK, Japanese, Korean, Thai, Lao, Cyrillic, Greek, Arabic, Devanagari, Latin diacritics/pinyin)
+        cleaned = re.sub(
+            r"[\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af\u0e00-\u0eff\u0400-\u04ff\u0370-\u03ff\u0600-\u06ff\u0900-\u097f\u00c0-\u024f\u1e00-\u1eff]",
+            " ",
+            cleaned
+        )
+
+        # 7. Remove residual empty parentheses or brackets
+        cleaned = re.sub(r"\(\s*\)", " ", cleaned)
+        cleaned = re.sub(r"\[\s*\]", " ", cleaned)
+
+        # 8. Segment into paragraphs using newlines
+        paragraphs = re.split(r"[\n\r]+", cleaned)
 
         sentences = []
         seen = set()
 
-        for candidate in raw_candidates:
+        for para in paragraphs:
             # Normalize Khmer Unicode canonically & remove ZWSP
-            norm = normalize_khmer_text(candidate.strip(), strip_zwsp=True)
+            norm = normalize_khmer_text(para.strip(), strip_zwsp=True)
             if not norm:
                 continue
 
@@ -158,40 +214,33 @@ class KhmerWikipediaLoader:
             if len(khmer_chars) < 10:
                 continue
 
-            # Filter: at least 60% Khmer characters to avoid foreign language lists
-            if (len(khmer_chars) / max(1, len(norm))) < 0.55:
-                continue
+            # Chunk paragraph cleanly using word-level boundaries (target 24-45 chars per line)
+            # Guarantees words are never split mid-syllable or mid-word (preserves words like ចាស់, ទេសចរណ៍).
+            chunked = chunk_text_by_words(norm, min_chars=24, max_chars=45)
+            for line_str in chunked:
+                line_str = line_str.strip()
+                if len(line_str) < 15:
+                    continue
 
-            # Chunk long sentences cleanly using orthographic syllables (target 24-45 chars per line)
-            if len(norm) > 45:
-                syls = split_into_syllables(norm)
-                curr: list[str] = []
-                curr_len = 0
-                for s in syls:
-                    curr.append(s)
-                    curr_len += len(s)
-                    # When target minimum line length is reached, break on whitespace, punctuation or max length
-                    if curr_len >= 24:
-                        if s.isspace() or any(p in s for p in ["។", "៕", ",", "!", "?", ";"]) or curr_len >= 42:
-                            line_str = "".join(curr).strip()
-                            if len(line_str) >= 12 and line_str not in seen:
-                                seen.add(line_str)
-                                sentences.append(line_str)
-                            curr = []
-                            curr_len = 0
-                if curr:
-                    rem = "".join(curr).strip()
-                    if len(rem) >= 12 and rem not in seen:
-                        seen.add(rem)
-                        sentences.append(rem)
-                    elif sentences and len(rem) > 0:
-                        combined = f"{sentences[-1]} {rem}".strip()
-                        if len(combined) <= 55:
-                            sentences[-1] = combined
-            else:
-                if len(norm) >= 12 and norm not in seen:
-                    seen.add(norm)
-                    sentences.append(norm)
+                # Pure Khmer check: reject any Latin characters if allow_latin is False
+                if pure_khmer and not allow_latin:
+                    if any("a" <= ch.lower() <= "z" for ch in line_str):
+                        continue
+
+                # Filter: density of Khmer characters
+                line_khmer_chars = [c for c in line_str if 0x1780 <= ord(c) <= 0x17FF]
+                if (len(line_khmer_chars) / len(line_str)) < min_khmer_ratio:
+                    continue
+
+                # Avoid orphan starting characters
+                if 0x17B4 <= ord(line_str[0]) <= 0x17D3 or line_str[0] == "\u17D7":
+                    continue
+                if line_str.startswith("ស់") or line_str.startswith("ល់"):
+                    continue
+
+                if line_str not in seen:
+                    seen.add(line_str)
+                    sentences.append(line_str)
 
         return sentences
 
@@ -200,6 +249,9 @@ class KhmerWikipediaLoader:
         categories: Optional[List[str]] = None,
         max_articles: int = 20,
         progress_callback: Optional[Callable[[int, int, str], None]] = None,
+        pure_khmer: bool = True,
+        min_khmer_ratio: float = 0.70,
+        allow_latin: bool = False,
     ) -> List[str]:
         """Harvests sentences from curated Khmer topics."""
         titles_to_fetch = []
@@ -218,7 +270,12 @@ class KhmerWikipediaLoader:
                 progress_callback(idx + 1, total, f"Fetching: {title}")
             try:
                 extract = self.fetch_article_extract(title)
-                sentences = self.clean_and_segment_extract(extract)
+                sentences = self.clean_and_segment_extract(
+                    extract,
+                    pure_khmer=pure_khmer,
+                    min_khmer_ratio=min_khmer_ratio,
+                    allow_latin=allow_latin,
+                )
                 all_sentences.extend(sentences)
             except Exception:
                 continue
@@ -229,6 +286,9 @@ class KhmerWikipediaLoader:
         self,
         count: int = 20,
         progress_callback: Optional[Callable[[int, int, str], None]] = None,
+        pure_khmer: bool = True,
+        min_khmer_ratio: float = 0.70,
+        allow_latin: bool = False,
     ) -> List[str]:
         """Harvests sentences by crawling random articles."""
         titles = self.fetch_random_titles(count)
@@ -240,7 +300,12 @@ class KhmerWikipediaLoader:
                 progress_callback(idx + 1, total, f"Crawling: {title}")
             try:
                 extract = self.fetch_article_extract(title)
-                sentences = self.clean_and_segment_extract(extract)
+                sentences = self.clean_and_segment_extract(
+                    extract,
+                    pure_khmer=pure_khmer,
+                    min_khmer_ratio=min_khmer_ratio,
+                    allow_latin=allow_latin,
+                )
                 all_sentences.extend(sentences)
             except Exception:
                 continue
@@ -252,6 +317,9 @@ class KhmerWikipediaLoader:
         query: str,
         max_articles: int = 15,
         progress_callback: Optional[Callable[[int, int, str], None]] = None,
+        pure_khmer: bool = True,
+        min_khmer_ratio: float = 0.70,
+        allow_latin: bool = False,
     ) -> List[str]:
         """Searches for query on Khmer Wikipedia and extracts all matching sentences."""
         titles = self.search_articles(query, limit=max_articles)
@@ -263,7 +331,12 @@ class KhmerWikipediaLoader:
                 progress_callback(idx + 1, total, f"Searching: {title}")
             try:
                 extract = self.fetch_article_extract(title)
-                sentences = self.clean_and_segment_extract(extract)
+                sentences = self.clean_and_segment_extract(
+                    extract,
+                    pure_khmer=pure_khmer,
+                    min_khmer_ratio=min_khmer_ratio,
+                    allow_latin=allow_latin,
+                )
                 all_sentences.extend(sentences)
             except Exception:
                 continue

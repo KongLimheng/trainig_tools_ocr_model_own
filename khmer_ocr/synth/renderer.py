@@ -46,6 +46,17 @@ class KhmerTextRenderer:
 
         font = self.font_mgr.load_font(font_name, size=font_size)
 
+        # Anti-Tofu Safeguard: verify font can render Khmer characters without empty/missing glyphs
+        test_char = next((c for c in canonical_label if 0x1780 <= ord(c) <= 0x17A2), "ក")
+        try:
+            mask = font.getmask(test_char)
+            if mask.size == (0, 0):
+                fallback_names = [n for n in self.font_mgr.get_font_names() if "khmer" in n.lower() or "noto" in n.lower() or "battambang" in n.lower()]
+                fallback_name = fallback_names[0] if fallback_names else next(iter(self.font_mgr.get_font_names()))
+                font = self.font_mgr.load_font(fallback_name, size=font_size)
+        except Exception:
+            pass
+
         # Step 3: Measure text bounds using Raqm
         # Create a dummy image to measure precise text bbox
         dummy_img = Image.new("RGB", (10, 10), (255, 255, 255))
